@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.andrewbenson.bitcoin</string>
+	<key>category</key>
+	<string>Tools</string>
+	<key>connections</key>
+	<dict>
+		<key>097212C1-D587-40C6-B613-2B068F29F66F</key>
+		<array/>
+		<key>2CD32307-16A7-4BC1-9C73-7CE493002783</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FB02AF16-C658-44D3-A58E-5F3148060F7F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>5DACE7E4-881C-44AB-86C0-D34AFFB1F429</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FB02AF16-C658-44D3-A58E-5F3148060F7F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>8D74808D-D453-4B3A-AB28-7718F94BCFBE</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2CD32307-16A7-4BC1-9C73-7CE493002783</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>A21272B3-93A9-423C-A8CE-22355DF47241</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5DACE7E4-881C-44AB-86C0-D34AFFB1F429</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>D357086D-77A6-4A0E-8D9A-C7E978B1C6C5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>EB64A909-8440-4708-9E44-4AEB1D5053DF</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>EB64A909-8440-4708-9E44-4AEB1D5053DF</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FB02AF16-C658-44D3-A58E-5F3148060F7F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+		<key>FB02AF16-C658-44D3-A58E-5F3148060F7F</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>097212C1-D587-40C6-B613-2B068F29F66F</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>Andrew Benson</string>
+	<key>description</key>
+	<string>Simple Alfred script that launches a Bitcoin block explorer for a given txids, wallet address, or block identifier.</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Bitcoin Blockchain Explorer</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>btc</string>
+				<key>subtext</key>
+				<string>Search block in a Bitcoin blockchain explorer</string>
+				<key>text</key>
+				<string>Bitcoin Block Search</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>A21272B3-93A9-423C-A8CE-22355DF47241</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>search_query</key>
+					<string>{query}</string>
+					<key>search_type</key>
+					<string>block</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>5DACE7E4-881C-44AB-86C0-D34AFFB1F429</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>browser</key>
+				<string></string>
+				<key>skipqueryencode</key>
+				<false/>
+				<key>skipvarencode</key>
+				<false/>
+				<key>spaces</key>
+				<string></string>
+				<key>url</key>
+				<string>{query}</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.openurl</string>
+			<key>uid</key>
+			<string>097212C1-D587-40C6-B613-2B068F29F66F</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>btc</string>
+				<key>subtext</key>
+				<string>Search transaction in Blockstream's blockchain explorer</string>
+				<key>text</key>
+				<string>Bitcoin Transaction Search</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>8D74808D-D453-4B3A-AB28-7718F94BCFBE</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>110</integer>
+				<key>script</key>
+				<string>python3 url_builder.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>url_builder.py</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FB02AF16-C658-44D3-A58E-5F3148060F7F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>search_query</key>
+					<string>{query}</string>
+					<key>search_type</key>
+					<string>txid</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>2CD32307-16A7-4BC1-9C73-7CE493002783</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>btc</string>
+				<key>subtext</key>
+				<string>Search address in Blockstream's blockchain explorer</string>
+				<key>text</key>
+				<string>Bitcoin Address Search</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>D357086D-77A6-4A0E-8D9A-C7E978B1C6C5</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argument</key>
+				<string>{query}</string>
+				<key>passthroughargument</key>
+				<true/>
+				<key>variables</key>
+				<dict>
+					<key>search_query</key>
+					<string>{query}</string>
+					<key>search_type</key>
+					<string>address</string>
+				</dict>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.utility.argument</string>
+			<key>uid</key>
+			<string>EB64A909-8440-4708-9E44-4AEB1D5053DF</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string># About 
+
+This Alfred Workflow provides quick access to the leading Bitcoin blockchain explorers. 
+
+### Supported Queries
+
+The workflow currently supports the following functions: 
+
+- Search Addresses
+- Search Blocks
+- Search Transactions (by txid)
+
+### Supported Block Explorers
+
+By default, the workflow uses the Mempool.space block explorer. This is configurable in the workflow settings. 
+
+The following Bitcoin block explorers are currently supported: 
+
+- Mempool.space (default)
+- Blockstream.info
+- Blockchain.com
+
+
+### Blockchain Instance Support
+
+By default, the workflow uses Bitcoin's mainnet. This is configurable in teh workflow settings. 
+
+The workflow currently supports the following instances of the Bitcoin blockchain: 
+
+- Mainnet (detfault)
+- Testnet 
+- Signet
+
+*Note: Blockchain.com does not support Signet queries. If Blockchain.com and Signet are selected, the workflow falls back to Mempool.space.*
+
+
+# Requirements 
+
+- Python 3.10 or later</string>
+	<key>uidata</key>
+	<dict>
+		<key>097212C1-D587-40C6-B613-2B068F29F66F</key>
+		<dict>
+			<key>xpos</key>
+			<real>580</real>
+			<key>ypos</key>
+			<real>300</real>
+		</dict>
+		<key>2CD32307-16A7-4BC1-9C73-7CE493002783</key>
+		<dict>
+			<key>xpos</key>
+			<real>245</real>
+			<key>ypos</key>
+			<real>330</real>
+		</dict>
+		<key>5DACE7E4-881C-44AB-86C0-D34AFFB1F429</key>
+		<dict>
+			<key>xpos</key>
+			<real>235</real>
+			<key>ypos</key>
+			<real>125</real>
+		</dict>
+		<key>8D74808D-D453-4B3A-AB28-7718F94BCFBE</key>
+		<dict>
+			<key>xpos</key>
+			<real>55</real>
+			<key>ypos</key>
+			<real>300</real>
+		</dict>
+		<key>A21272B3-93A9-423C-A8CE-22355DF47241</key>
+		<dict>
+			<key>xpos</key>
+			<real>55</real>
+			<key>ypos</key>
+			<real>90</real>
+		</dict>
+		<key>D357086D-77A6-4A0E-8D9A-C7E978B1C6C5</key>
+		<dict>
+			<key>xpos</key>
+			<real>60</real>
+			<key>ypos</key>
+			<real>505</real>
+		</dict>
+		<key>EB64A909-8440-4708-9E44-4AEB1D5053DF</key>
+		<dict>
+			<key>xpos</key>
+			<real>245</real>
+			<key>ypos</key>
+			<real>535</real>
+		</dict>
+		<key>FB02AF16-C658-44D3-A58E-5F3148060F7F</key>
+		<dict>
+			<key>xpos</key>
+			<real>385</real>
+			<key>ypos</key>
+			<real>300</real>
+		</dict>
+	</dict>
+	<key>userconfigurationconfig</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>mempool</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Mempool.Space</string>
+						<string>mempool</string>
+					</array>
+					<array>
+						<string>Blockstream</string>
+						<string>blockstream</string>
+					</array>
+					<array>
+						<string>Blockchain.com</string>
+						<string>blockchain</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>Select which Bitcoin block explorer to route queries.</string>
+			<key>label</key>
+			<string>Bitcoin Block Explorer</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>Block_Explorer</string>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>default</key>
+				<string>mainnet</string>
+				<key>pairs</key>
+				<array>
+					<array>
+						<string>Mainnet</string>
+						<string>mainnet</string>
+					</array>
+					<array>
+						<string>Testnet</string>
+						<string>testnet</string>
+					</array>
+					<array>
+						<string>Signet</string>
+						<string>signet</string>
+					</array>
+				</array>
+			</dict>
+			<key>description</key>
+			<string>Select which Bitcoin blockchain to query. Note that Blockchain.com dues not support Signet queries.</string>
+			<key>label</key>
+			<string>Blockchain Instance</string>
+			<key>type</key>
+			<string>popupbutton</string>
+			<key>variable</key>
+			<string>Blockchain</string>
+		</dict>
+	</array>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>0.0.1</string>
+	<key>webaddress</key>
+	<string>https://benson.vc/</string>
+</dict>
+</plist>
