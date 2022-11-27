@@ -158,6 +158,29 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>concurrently</key>
+				<false/>
+				<key>escaping</key>
+				<integer>110</integer>
+				<key>script</key>
+				<string>python3 url_builder.py</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>url_builder.py</string>
+				<key>type</key>
+				<integer>5</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FB02AF16-C658-44D3-A58E-5F3148060F7F</string>
+			<key>version</key>
+			<integer>2</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>browser</key>
 				<string></string>
 				<key>skipqueryencode</key>
@@ -196,29 +219,6 @@
 			<string>8D74808D-D453-4B3A-AB28-7718F94BCFBE</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>concurrently</key>
-				<false/>
-				<key>escaping</key>
-				<integer>110</integer>
-				<key>script</key>
-				<string>python3 url_builder.py</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string>url_builder.py</string>
-				<key>type</key>
-				<integer>5</integer>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.action.script</string>
-			<key>uid</key>
-			<string>FB02AF16-C658-44D3-A58E-5F3148060F7F</string>
-			<key>version</key>
-			<integer>2</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -287,7 +287,14 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string># About 
+	<string># Alfred Bitcoin Block Explorer
+
+- Version 1.0.0
+- Created by Andrew Benson
+- Follow me on [Twitter](https://twitter.com/AndrewBenson) or [GitHub](https://github.com/andrewbenson)
+- [GitHub repository for this workflow](https://github.com/andrewbenson/Alfred-Bitcoin-Block-Explorer)
+
+## About 
 
 This Alfred Workflow provides quick access to the leading Bitcoin blockchain explorers. 
 
@@ -451,7 +458,7 @@ The workflow currently supports the following instances of the Bitcoin blockchai
 	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
-	<string>0.0.1</string>
+	<string>1.0.0</string>
 	<key>webaddress</key>
 	<string>https://benson.vc/</string>
 </dict>

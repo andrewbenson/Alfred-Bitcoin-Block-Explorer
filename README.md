@@ -1,6 +1,6 @@
 # Alfred Bitcoin Block Explorer
 
-- Version 0.0.1
+- Version 1.0.0
 - Created by Andrew Benson
 - Follow me on [Twitter](https://twitter.com/AndrewBenson) or [GitHub](https://github.com/andrewbenson)
 
@@ -42,4 +42,4 @@ The workflow currently supports the following instances of the Bitcoin blockchai
 
 # Requirements 
 
-- Python 3.10 or later
+- **Requires Python 3.10 or later**
