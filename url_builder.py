@@ -1,7 +1,7 @@
 import os
 import sys
 
-# determine the serach time (address, txid, or block)
+# determine the serach type (address, txid, or block)
 search_type = os.environ["search_type"]
 
 query = os.environ["search_query"]
